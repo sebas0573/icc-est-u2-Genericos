@@ -74,15 +74,17 @@ public class App {
         int contadorMayores=0;
         int contadorMenores=0; 
 
-        /*for(int i=0; i<personas.length; i++){
+        for(int i=0; i<personas.length; i++){
             if(personas[i].getEdad() >= 18){
                 mayores[contadorMayores] = new Par<String, Integer>();
                 mayores[contadorMayores].establecerClave(personas[i].getNombre());
                 mayores[contadorMayores].establecerValor(personas[i].getEdad());
+                contadorMayores++;
             }else{
                 menores[contadorMenores] = new Par<Integer, String>();
-                menores[contadorMenores].establecerValor(personas[i].getEdad());
-                menores[contadorMenores].establecerClave(personas[i].getNombre());
+                menores[contadorMenores].establecerValor(personas[i].getNombre());
+                menores[contadorMenores].establecerClave(personas[i].getEdad());
+                contadorMenores++;
             }
         }
         System.out.println("Mayores  de edad");
@@ -92,7 +94,7 @@ public class App {
         System.out.println("Menores de edad");
         for (Par<Integer,String> par3 : menores) {
             System.out.println(par3.obtenerValor()+" --- "+par3.obtenerClave());
-        }*/
+        }
         
 
         
