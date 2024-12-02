@@ -77,20 +77,23 @@ public class App {
         /*for(int i=0; i<personas.length; i++){
             if(personas[i].getEdad() >= 18){
                 mayores[contadorMayores] = new Par<String, Integer>();
-                mayores[contadorMayores].establecerClave(personas[i].getEdad());
-                mayores[contadorMayores].establecerValor(personas[i].getNombre());
-
-        }*/
-
-        /*for(int i=0; i<personas.length; i++){
-            if(personas[i].getEdad() >= 18){
-                System.out.println("Mayores");
-                System.out.println("Nombre "+personas[i].getEdad()+ "Edad "+personas[i].getEdad());
+                mayores[contadorMayores].establecerClave(personas[i].getNombre());
+                mayores[contadorMayores].establecerValor(personas[i].getEdad());
             }else{
-                System.out.println("Menores");
-                System.out.println("Edad "+personas[i].getEdad()+ "Nombre "+personas[i].getNombre());
+                menores[contadorMenores] = new Par<Integer, String>();
+                menores[contadorMenores].establecerValor(personas[i].getEdad());
+                menores[contadorMenores].establecerClave(personas[i].getNombre());
             }
+        }
+        System.out.println("Mayores  de edad");
+        for (Par<String,Integer> parr : mayores) {
+            System.out.println(parr.obtenerClave()+" --- "+parr.obtenerValor());
+        }
+        System.out.println("Menores de edad");
+        for (Par<Integer,String> par3 : menores) {
+            System.out.println(par3.obtenerValor()+" --- "+par3.obtenerClave());
         }*/
+        
 
         
         
